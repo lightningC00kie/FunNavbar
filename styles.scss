@@ -34,7 +34,8 @@ body {
     transition: width ease-in-out 150ms;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     width: 100%;
   }
 }
@@ -43,5 +44,6 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
